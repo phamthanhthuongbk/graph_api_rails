@@ -3,7 +3,7 @@ class CreateReactions < ActiveRecord::Migration[6.0]
     create_table :reactions do |t|
       t.belongs_to :post
       t.belongs_to :account
-      t.string :type
+      t.string :action
 
       t.timestamps
     end

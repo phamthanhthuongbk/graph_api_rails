@@ -48,7 +48,7 @@ ActiveRecord::Schema.define(version: 2020_05_31_082012) do
   create_table "reactions", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4", force: :cascade do |t|
     t.bigint "post_id"
     t.bigint "account_id"
-    t.string "type"
+    t.string "action"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["account_id"], name: "index_reactions_on_account_id"

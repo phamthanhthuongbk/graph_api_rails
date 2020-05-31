@@ -4,4 +4,4 @@
 # bundle exec rails webpacker:install
 
 # ShareFile
-# cp -arf docker/backend/shared_files/. /repo
+cp -arf docker/backend/shared_files/. /repo/backend
